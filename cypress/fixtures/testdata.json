@@ -1,0 +1,7 @@
+{
+  "correct_email": "eve.holt@reqres.in",
+  "wrong_email": "onur@test.com",
+  "password": "cityslicka",
+  "login_success_message": "Welcome eve.holt@reqres.in",
+  "login_error_message": "Invalid email or password"
+}

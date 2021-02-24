@@ -1,0 +1,13 @@
+{
+  "create_account": "Lütfen hesabınızı oluşturun.",
+  "email": "E-posta",
+  "email_placeholder": "E-postanızı girin",
+  "password": "Parola",
+  "password_placeholder": "Parolanızı girin",
+  "forgot_password": "Parolamı Unuttum",
+  "sign_in": "Giriş Yap",
+  "sign_up": "Kayıt Ol",
+  "invalid_credentials": "Geçersiz e-posta veya parola",
+  "correct_credentials": "Hoşgeldiniz {{email}}",
+  "agreements": "Devam ederek, <a href='https://rapsodo.com/terms-of-use/' target='_blank' data-testid='terms-of-use-link-test'>Rapsodo'nun Kullanım Koşullarını</a> ve <a href='https://rapsodo.com/privacy-policy/' target='_blank' data-testid='privacy-policy-link-test'>Gizlilik Politikasını</a> kabul etmiş olursunuz"
+}

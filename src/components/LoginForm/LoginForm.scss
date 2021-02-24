@@ -1,0 +1,50 @@
+@import '../../assets/styles/vars.scss';
+@import '../../assets/styles/mixin.scss';
+
+.login-form {
+  > * {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .forgot-password-button {
+    margin-bottom: 54px;
+  }
+
+  .ra-agreements {
+    &.mobile-view {
+      display: none;
+    }
+
+    &.web-view {
+      width:400px;
+      text-align: left;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid $color-gallery;
+    }
+  }
+
+  @include mobile-l {
+    .password-input {
+      margin-top: 15px;
+    }
+
+    .forgot-password-button {
+      margin: 0;
+    }
+
+    .ra-agreements {
+      &.mobile-view {
+        display: block;
+        margin: 25px auto 30px auto;
+        width: 230px;
+      }
+
+      &.web-view {
+        display: none;
+      }
+    }
+  }
+}

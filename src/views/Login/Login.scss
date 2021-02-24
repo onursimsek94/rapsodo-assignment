@@ -1,0 +1,179 @@
+@import '../../assets/styles/vars.scss';
+@import '../../assets/styles/mixin.scss';
+
+.login-view {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f7f7;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    background-color: white;
+    padding-bottom: 100%;
+    width: 100%;
+    bottom: 0;
+    right: -28.5%;
+    transform: rotate(33deg);
+    transform-origin: left bottom;
+
+    @include web-l {
+      right: -26.5%;
+    }
+
+    @include web-s {
+      right: -28%;
+    }
+  }
+
+  .box {
+    position: relative;
+    margin: auto auto;
+    width: 100%;
+    height: 600px;
+    padding: 45px 0 0 40px;
+    max-width: 1040px;
+    border-radius: 15px;
+    background-color: $color-white;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+
+    .ra-language-switch {
+      position: absolute;
+      top: -40px;
+      right: 0;
+    }
+
+    .view-header {
+      position: absolute;
+      z-index: 2;
+
+      .view-title {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.22px;
+        color: $color-tuna;
+
+        & div:last-child {
+          margin-top: 2px;
+          font-size: 15px;
+          font-weight: 500;
+          letter-spacing: 0.18px;
+          color: $color-rolling-stone;
+        }
+      }
+    }
+
+    .players-image {
+      position: absolute;
+      z-index: 0;
+      width: 102%;
+      height: 100%;
+      min-height: 300px;
+      top: 0;
+      right: 0;
+      background: url(../../assets/images/players.png) no-repeat;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right;
+    }
+
+    .login-form {
+      position: relative;
+      z-index: 1;
+      margin-top: 110px;
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+
+
+  @include mobile-l {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 30px 20px;
+    background: url(../../assets/images/path.png) no-repeat top center;
+    background-size: 100% 386px;
+    height: auto;
+
+    &:before {
+      display: none;
+    }
+
+    .box {
+      position: relative;
+      margin: 190px 0 0 0;
+      padding: 26px 15px;
+      width: calc(100% - 40px);
+      border-radius: 15px;
+      background-color: $color-white;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+      height: auto;
+
+      .ra-language-switch {
+        display: none;
+      }
+
+      .view-header {
+        position: relative;
+        top: -215px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+
+        .rapsodo-logo {
+          align-self: center;
+          margin-top: 43px;
+        }
+
+        .view-title {
+          position: relative;
+          z-index: 1;
+          margin-top: 6px;
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 0.14px;
+          color: $color-white;
+
+          & div:last-child {
+            margin-top: 2px;
+            font-size: 12px;
+            letter-spacing: 0.14px;
+            color: $color-white;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .players-image {
+        position: absolute;
+        width: 102%;
+        height: auto;
+        min-height: 300px;
+        left: -2%;
+        top: -13%;
+        background: url(../../assets/images/players-mobile.png) no-repeat;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      .login-form {
+        margin-top: 25%;
+        max-width: unset;
+      }
+    }
+  }
+  @include mobile-m {
+    background-size: 100% 358px;
+  }
+
+  @include mobile-s {
+    background-size: 100% 319px;
+  }
+}

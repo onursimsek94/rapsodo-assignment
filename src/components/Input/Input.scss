@@ -1,0 +1,23 @@
+@import '../../assets/styles/vars.scss';
+
+.ra-input {
+  input {
+    padding: 15px;
+    width: calc(100% - 30px);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.25;
+    border: 1px solid $color-gallery;
+    border-radius: 6px;
+    color: $color-tundora;
+
+    &::placeholder {
+      font-weight: 500;
+      color: $color-silver-sand;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

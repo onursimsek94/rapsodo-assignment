@@ -1,0 +1,31 @@
+@import "./vars";
+
+@mixin mobile-l {
+  @media (max-width: $screen-mobile-l) {
+    @content;
+  }
+}
+
+@mixin mobile-m {
+  @media (max-width: $screen-mobile-m) {
+    @content;
+  }
+}
+
+@mixin mobile-s {
+  @media (max-width: $screen-mobile-s) {
+    @content;
+  }
+}
+
+@mixin web-l {
+  @media screen and (max-width: $screen-web-s) {
+    @content;
+  }
+}
+
+@mixin web-s {
+  @media screen and (max-width: $screen-web-s) {
+    @content;
+  }
+}

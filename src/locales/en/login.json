@@ -1,0 +1,13 @@
+{
+  "create_account": "Please create your account.",
+  "email": "E-mail",
+  "email_placeholder": "Enter e-mail",
+  "password": "Password",
+  "password_placeholder": "Enter password",
+  "forgot_password": "Forgot your password?",
+  "sign_in": "Sign In",
+  "sign_up": "Sign Up",
+  "invalid_credentials": "Invalid email or password",
+  "correct_credentials": "Welcome {{email}}",
+  "agreements": "By continuing, you agree to <a href='https://rapsodo.com/terms-of-use/' target='_blank' data-testid='terms-of-use-link-test'>Rapsodo’s Terms of Use</a> and <a href='https://rapsodo.com/privacy-policy/' target='_blank' data-testid='privacy-policy-link-test'>Privacy Policy</a>"
+}

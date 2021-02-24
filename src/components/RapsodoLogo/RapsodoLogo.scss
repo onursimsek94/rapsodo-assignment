@@ -1,0 +1,21 @@
+
+@import '../../assets/styles/vars.scss';
+@import '../../assets/styles/mixin.scss';
+
+.ra-logo {
+  width: 130px;
+
+  &.light-logo {
+    display: none;
+  }
+
+  @include mobile-l {
+    &.light-logo {
+      display: unset;
+    }
+
+    &.dark-logo {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "rapsodo-assignment",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "i18next": "^19.8.9",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-i18next": "^11.8.7",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.2",
+    "react-toast-notifications": "^2.4.3",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "eslint:fix": "eslint '**/*.js' --fix",
+    "cypress:open": "cypress open"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.7.3",
+    "cypress": "^6.5.0",
+    "eslint-plugin-cypress": "^2.11.2",
+    "node-sass": "^5.0.0"
+  }
+}
